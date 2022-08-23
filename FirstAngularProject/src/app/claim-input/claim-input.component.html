@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+</head>
+
+<body>
+  <app-header></app-header>
+
+  <!--body-->
+  <div class="row">
+    <div class="col-sm-3">
+
+    </div>
+    <div class="col-sm-6">
+
+      <div class="card text-center ">
+        <div class="card-body">
+          <h5 class="card-title">Please provide the details in order to proceed</h5>
+          <form #claimform="ngForm" (ngSubmit)="claims()" class="form-horizontal">
+            <div class="form-group row mt-4 justify-content-center">
+
+              <label for="inputPassword" class="col-sm-3 col-form-label"> Claim ID</label>
+
+              <div class="col-sm-5">
+                <input type="number" class="form-control" name="claimId" placeholder="Claim ID"
+                  [(ngModel)]="claim.claimId">
+              </div>
+            </div>
+            <div class="form-group row py-4 justify-content-center">
+
+              <label for="inputPassword" class="col-sm-3 col-form-label"> Member ID</label>
+
+              <div class="col-sm-5">
+                <input type="number" class="form-control" name="memberId" placeholder="Member ID"
+                  [(ngModel)]="claim.memberId">
+              </div>
+            </div>
+            <div class="form-group row justify-content-center ">
+              <label for="inputPassword" class="col-sm-3 col-form-label">Policy ID</label>
+              <div class="col-sm-5">
+                <input type="number" class="form-control" name="policyId" placeholder="Policy ID"
+                  [(ngModel)]="claim.policyId">
+              </div>
+            </div>
+            <div class="py-2 text-center">
+              <button accesskey="s" type="submit" class="btn btn--green btn--animated">Submit</button>
+            </div>
+            <div class="text-center">
+              <small class="text-danger text-center"><b>{{errormsg}}</b></small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3"></div>
+  </div>
+  <!--footer-->
+  <app-footer></app-footer>
+  <!--footer-->
+</body>
+
+</html>

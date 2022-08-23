@@ -1,0 +1,6 @@
+version: "3.7"
+services:
+  jwt_service: 
+    image: shaileshgoyal1999/jwtauthentication:jwt
+    ports: 
+      - "8089:8089"

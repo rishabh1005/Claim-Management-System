@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  <title>Claim Management System</title>
+</head>
+
+<!-- Navbar-->
+
+<!--body-->
+
+<body>
+  <app-header></app-header>
+  <div class="row">
+    <div class="col-md-3">
+
+
+    </div>
+    <div class="col-md-6 ">
+      <div class="text-center clr mt-5">
+        <h4><b>Please select the below Service of Your Choice</b></h4>
+      </div>
+
+      <section class="hero-section">
+        <div class="card-grid">
+          <a class="card">
+            <img class="card-img-top" src="assets/image/11.jpg" alt="Card image cap">
+            <div class="card-body mt-2">
+              <h5 class="card-title text-center">View Bill</h5>
+              <div class="text-center">
+                <a accesskey="v" href="/memberdetailsModule"
+                  class="btn btn-primary btn-sm active justify-content-center clr1" role="button"
+                  aria-pressed="true"><b><u>P</u></b>roceed to View Bills</a>
+              </div>
+            </div>
+          </a>
+
+          <a class="card">
+            <img class="card-img-top  " src="assets/image/7.jpg" alt="Card image cap">
+            <div class="card-body mt-2">
+              <h5 class="card-title text-center">Claim Status</h5>
+              <div class="text-center">
+                <a accesskey="c" href="/claimInput" class="btn btn-primary btn-sm active justify-content-center clr1"
+                  role="button" aria-pressed="true"><b><u>P</u></b>roceed to Claim Status</a>
+              </div>
+            </div>
+          </a>
+
+          <a class="card">
+            <img class="card-img-top mt-0" src="assets/image/8.jpg" alt="Card image cap">
+            <div class="card-body mt-2">
+              <h5 class="card-title text-center">Submit Claim</h5>
+              <div class="text-center">
+                <a accesskey="s" href="/submitInput" class="btn btn-primary btn-sm active justify-content-center clr1"
+                  role="button" aria-pressed="true"><b><u>P</u></b>roceed to Submit Claim</a>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+      </section>
+
+    </div>
+    <div class="col-md-3">
+
+    </div>
+  </div>
+  <app-footer></app-footer>
+</body>
+<!-- Footer -->
+
+</html>

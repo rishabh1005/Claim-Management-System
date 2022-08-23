@@ -1,0 +1,24 @@
+.bg-blue{
+    color:white;
+    background-color: #1A237E;   
+    width: 100%;
+}
+
+.nav1{  
+    color: white;
+    text-decoration: none;    
+    padding-left: 10px;
+}
+
+button{
+    background-color: #1A237E;
+    color: white;
+    min-width: 20%;
+    text-align: center;
+}
+
+button:hover {
+    color:white;
+}
+
+#navbarDropdown:hover {cursor: pointer;}
